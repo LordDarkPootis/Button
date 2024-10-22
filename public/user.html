@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Пользовательская страница</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="nicknamePrompt">Введите свой ник</h1>
+        <input type="text" id="nickname" placeholder="Ваш ник" maxlength="15" />
+        <button id="enterButton">Войти</button>
+        
+        <h2 id="welcomeMessage" style="display: none;">Добро пожаловать, <span id="userNickname"></span>!</h2>
+        
+        <p id="statusMessage" style="display: none;"></p>
+        
+        <button id="actionButton" style="display: none;">Нажми меня!</button>
+        <audio id="sound" src="sound.mp3"></audio>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="user-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-styles.css">
+    <title>Админская панель</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Админская панель</h1>
+        
+        <div class="panel">
+            <h2>Подключенные пользователи (<span id="userCount">0</span>)</h2>
+            <ul id="connectedUsersList"></ul>
+        </div>
+
+        <div class="panel">
+            <h2>Первые нажимавшие кнопку</h2>
+            <ul id="firstPressList"></ul>
+        </div>
+        
+        <audio id="connectSound" src="connect-sound.mp3"></audio>
+        <audio id="disconnectSound" src="disconnect-sound.mp3"></audio>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="admin-script.js"></script>
+</body>
+</html>

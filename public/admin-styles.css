@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.png'); /* Замените на ваш фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Ширина контейнера */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.panel {
+    background-color: #e0e0e0;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+li {
+    padding: 5px 0; /* Отступы для элементов списка */
+    color: #444;
+}

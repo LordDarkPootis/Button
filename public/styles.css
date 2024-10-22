@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    background-image: url('background.png'); /* Замените на ваш фон */
+    background-size: cover; /* Заставляем фон растягиваться на весь экран */
+    background-position: center; /* Центрируем фон */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Замените на желаемый цвет фона */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Прозрачный белый фон */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Ограничим ширину контейнера */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-weight: 600; /* Полужирный текст */
+}
+
+h2 {
+    color: #4CAF50; /* Зеленый цвет для приветствия */
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px); /* Убираем отступы */
+    font-size: 16px; /* Размер шрифта */
+}
+
+button {
+    padding: 20px 20px; /* Увеличиваем высоту кнопки */
+    background: #f44336; /* Красный цвет для кнопки до ввода ника */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Закругляем углы кнопки */
+    cursor: pointer;
+    font-size: 18px; /* Увеличим размер шрифта */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 15px; /* Добавим отступ снизу */
+    display: block; /* Делаем кнопку блочным элементом для центрирования */
+    width: 100%; /* Задаем ширину кнопки 100% контейнера */
+    transition: background 0.3s, transform 0.2s; /* Плавный переход при наведении */
+}
+
+    button:hover {
+        background: #e53935; /* Темнее при наведении */
+        transform: scale(1.05); /* Увеличение при наведении */
+    }
+
+    button:disabled {
+        background-color: #ccc; /* Серая кнопка для отключенной кнопки */
+        color: #666; /* Цвет текста для отключенной кнопки */
+        cursor: not-allowed; /* Указатель для отключенной кнопки */
+    }
+#statusMessage {
+    margin-top: 15px;
+    font-size: 16px; /* Размер шрифта для сообщения */
+    color: #333; /* Цвет текста */
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Убедимся, что фон покрывает экран */
+    }
+
+    .container {
+        width: 90%; /* Ширина контейнера на мобильных устройствах */
+        padding: 20px; /* Уменьшаем отступы для мобильных */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Уменьшаем размер шрифта заголовков */
+    }
+
+    input, button {
+        font-size: 14px; /* Уменьшаем размер шрифта для ввода и кнопок */
+    }
+}
